@@ -58,6 +58,7 @@
                     </view>
                     <connections>
                         <outlet property="btnAlert" destination="Y2f-Kk-MI6" id="wtI-fY-exT"/>
+                        <outlet property="fieldAnswer" destination="UkR-9E-GHB" id="xLE-el-xjK"/>
                         <outlet property="textLabel" destination="XlK-wz-ci3" id="Rt0-v2-uwV"/>
                         <outlet property="textQuestion" destination="cB2-Px-arU" id="eqY-UT-7Xg"/>
                     </connections>
