@@ -12,7 +12,13 @@ class ViewController: UIViewController {
 
     @IBOutlet var btnAlert:UIButton!
     @IBOutlet var textLabel:UILabel!
+    @IBOutlet weak var textQuestion: UILabel!
     
+    @IBAction func submitAnswer(sender: AnyObject) {
+        print("Submit answer")
+        
+        textQuestion.text = "it's work"
+    }
     @IBAction func showAlert() {
         var Alert:UIAlertView = UIAlertView(title: "Alert", message: "This is alert message", delegate: self, cancelButtonTitle: "Ok")
         Alert.show()
