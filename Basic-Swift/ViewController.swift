@@ -21,7 +21,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //
+        // print to log
+        // now using print, objc using nslog
+        print("Hello Swirf")
         
         // Set a label text programaticly
         textLabel.text = "Hello swift"
