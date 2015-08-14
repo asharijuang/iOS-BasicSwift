@@ -78,6 +78,20 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iX-bN-0EP">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1Ls-it-eme"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="Xb2-H6-seY"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Fnc-vZ-EKK"/>
+                                    <barButtonItem systemItem="search" id="B6m-18-yMM"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Scc-wH-vL8"/>
+                                    <barButtonItem systemItem="stop" id="zaO-xN-15F"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -85,6 +99,7 @@
                             <constraint firstItem="UkR-9E-GHB" firstAttribute="centerX" secondItem="ScH-wO-E8e" secondAttribute="centerX" id="5lt-ia-Jjs"/>
                             <constraint firstItem="cB2-Px-arU" firstAttribute="top" secondItem="XlK-wz-ci3" secondAttribute="bottom" constant="33" id="9lI-RW-Nu3"/>
                             <constraint firstItem="Y2f-Kk-MI6" firstAttribute="centerX" secondItem="5PF-y7-rHJ" secondAttribute="centerX" id="Bsd-FR-rF7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6iX-bN-0EP" secondAttribute="bottom" id="Jir-1s-iHF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5PF-y7-rHJ" secondAttribute="trailing" constant="-20" id="NEU-vj-fn2"/>
                             <constraint firstItem="cB2-Px-arU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Pi5-37-OV3"/>
                             <constraint firstItem="XlK-wz-ci3" firstAttribute="top" secondItem="Y2f-Kk-MI6" secondAttribute="bottom" constant="34" id="V4Q-lx-KDc"/>
@@ -95,6 +110,8 @@
                             <constraint firstItem="XlK-wz-ci3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="209" id="emM-xy-JJe"/>
                             <constraint firstItem="Y2f-Kk-MI6" firstAttribute="top" secondItem="5PF-y7-rHJ" secondAttribute="bottom" constant="17" id="h8h-zT-1M6"/>
                             <constraint firstItem="UkR-9E-GHB" firstAttribute="top" secondItem="cB2-Px-arU" secondAttribute="bottom" constant="31" id="o0W-Ir-7Wm"/>
+                            <constraint firstItem="6iX-bN-0EP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="oSs-7w-S43"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6iX-bN-0EP" secondAttribute="trailing" constant="-20" id="pa6-9Z-K42"/>
                             <constraint firstItem="5PF-y7-rHJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="wje-1x-Vb4"/>
                         </constraints>
                     </view>
