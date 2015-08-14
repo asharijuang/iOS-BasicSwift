@@ -15,14 +15,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var fieldAnswer: UITextField!
     @IBOutlet weak var textQuestion: UILabel!
     
+    var time = 0
+    
     @IBAction func submitAnswer(sender: AnyObject) {
         print("Submit answer")
         
         textQuestion.text = "Hello \(fieldAnswer.text)"
     }
     @IBAction func showAlert() {
-        var Alert:UIAlertView = UIAlertView(title: "Alert", message: "This is alert message", delegate: self, cancelButtonTitle: "Ok")
-        Alert.show()
+//        var Alert:UIAlertView = UIAlertView(title: "Alert", message: "This is alert message", delegate: self, cancelButtonTitle: "Ok")
+//        Alert.show()
+    }
+    
+    
+    // show result increment time
+    func result() {
+        time++
+        print(time)
     }
     
     override func viewDidLoad() {
@@ -36,6 +45,11 @@ class ViewController: UIViewController {
         textLabel.text = "Hello swift"
         textLabel.textColor = UIColor.greenColor()
         textLabel.textAlignment = NSTextAlignment.Center
+        
+        // how timer work
+        var timer = NSTimer()
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
         
         
         // Do any additional setup after loading the view, typically from a nib.
